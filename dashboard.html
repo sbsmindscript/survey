@@ -297,15 +297,17 @@ app.controller('myCtrl', function($scope,$window,$http) {
         navigator.geolocation.getCurrentPosition(function(position) {
             $scope.$evalAsync(function() {
                 $scope.lat = position.coords.latitude;
-                console.log($scope.lat);
+                alert($scope.lat);
                 $scope.lan = position.coords.longitude;
-                console.log($scope.lan);
+                alert($scope.lan);
             })
         });
     }
 }
 
-//19.834625758831116, 75.88080673746703
+//19.834625758831116, 75.88080673746703  original//
+
+
 
 
  $scope.users= localStorage.getItem('username');

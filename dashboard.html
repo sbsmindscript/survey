@@ -307,25 +307,27 @@ app.controller('myCtrl', function($scope,$window,$http) {
 
 //19.834625758831116, 75.88080673746703  original//
 
+// 21.1458004     //  79.0881546
 
 
 
- $scope.users= localStorage.getItem('username');
 
- $scope.token=localStorage.getItem('email');
+//  $scope.users= localStorage.getItem('username');
 
-console.log($scope.token);
+//  $scope.token=localStorage.getItem('email');
 
-   if($scope.token == null)
-    {
+// console.log($scope.token);
+
+//    if($scope.token == null)
+//     {
       
-      $window.location.href='index.html';
-    }
+//       $window.location.href='index.html';
+//     }
 
-    else{
+//     else{
 
-      // $window.location.href='#!/main';
-    }
+//       // $window.location.href='#!/main';
+//     }
 
 
 $scope.logout=function(){

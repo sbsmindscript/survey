@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from edunet-html.vercel.app/withdraw.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 08:44:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edunet - Personal LMS HTML Dashboard</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard">
+
+<div id="preloader">
+    <i>.</i>
+    <i>.</i>
+    <i>.</i>
+</div>
+
+<div id="main-wrapper">
+
+    <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="brand-logo"><a class="mini-logo" href="index-2.html"><img src="images/logoi.png" alt=""
+                                    width="40"></a></div>
+                        <div class="search">
+                            <form action="#">
+                                <div class="input-group"><input type="text" class="form-control"
+                                        placeholder="Search Here..."><span class="input-group-text px-12"><i
+                                            class="ri-search-line"></i></span></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="dark-light-toggle"><span class="dark"><i class="ri-moon-line"></i></span><span
+                                class="light"><i class="ri-sun-line"></i></span></div>
+                        <div class="nav-item dropdown notification dropdown">
+                            <div data-bs-toggle="dropdown">
+                                <div class="notify-bell icon-menu"><span><i class="ri-notification-2-line"></i></span>
+                                </div>
+                            </div>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu notification-list dropdown-menu dropdown-menu-right">
+                                <div class="lists"><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-success-lighten text-success"><i
+                                                    class="ri-check-line"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Device confirmation completed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-danger-lighten text-danger"><i
+                                                    class="ri-close-line"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">2FA verification failed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Phone verification pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Phone verification pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a href="notification.html">See more<i class="ri-arrow-right-s-line"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="dropdown profile_log dropdown">
+                            <div data-bs-toggle="dropdown">
+                                <div class="user icon-menu active"><span class="thumb"><img src="images/avatar/1.png"
+                                            alt=""></span></div>
+                            </div>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu dropdown-menu dropdown-menu-right">
+                                <div class="user-email">
+                                    <div class="user"><span class="thumb"><img src="images/avatar/1.png" alt=""></span>
+                                        <div>
+                                            <h5>Fiaz Abdullah</h5><span>codeefly@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="profile.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-user-line"></i></span>Profile</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="settings-profile.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-settings-3-line"></i></span>Settings</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="settings-activity.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-time-line"></i></span>Activity</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="lock.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-lock-line"></i></span>Lock</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  text-danger"
+                                    href="signin.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-logout-circle-line"></i></span>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="sidebar">
+    <div class="brand-logo text-center"><a class="mini-logo" href="index-2.html"><img src="images/logoi.png" alt=""
+                width="30"></a></div>
+    <div class="menu">
+        <ul>
+            <li class="undefined"><a href="index-2.html"><span><i class="ri-grid-fill"></i></span><span
+                        class="nav-text">Dashboard</span></a></li>
+            <li class="undefined"><a href="courses.html"><span><i class="ri-stack-fill"></i></span><span
+                        class="nav-text">Courses</span></a></li>
+            <li class="undefined"><a href="wallet.html"><span><i class="ri-wallet-3-fill"></i></span><span
+                        class="nav-text">Wallet</span></a></li>
+            <li class="undefined"><a href="withdraw.html"><span><i class="ri-hand-coin-fill"></i></span><span
+                        class="nav-text">Withdraw</span></a></li>
+            <li class="undefined"><a href="upload.html"><span><i class="ri-upload-cloud-2-fill"></i></span><span
+                        class="nav-text">Upload</span></a></li>
+            <li class="undefined"><a href="leader-board.html"><span><i class="ri-empathize-fill"></i></span><span
+                        class="nav-text">Board</span></a></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="content-body">
+        <div class="container">
+            <div class="page-title">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6">
+                        <div class="page-title-content">
+                            <h3>My Card</h3>
+                            <p class="mb-2">Welcome to Edunet My Card page</p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="breadcrumbs"><a href="#">Home </a><span><i
+                                    class="ri-arrow-right-s-line"></i></span><a href="#">My Card</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="cc-card">
+                        <div class="cc-card-info">
+                            <div>
+                                <p>Balance</p>
+                                <h3>$3356</h3>
+                            </div><img src="images/cc/visa.png" alt="">
+                        </div>
+                        <div class="cc-card-number">
+                            <h3><span>4785 9856 2563 1254</span></h3>
+                        </div>
+                        <div class="cc-card-details">
+                            <div>
+                                <h5>CARD HOLDER</h5>
+                                <p>Saiful Islam</p>
+                            </div>
+                            <div>
+                                <h5>VALID TILL</h5>
+                                <p>11/21</p>
+                            </div>
+                            <div><img src="images/cc/sim.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cc-card">
+                        <div class="cc-card-info">
+                            <div>
+                                <p>Balance</p>
+                                <h3>$2458</h3>
+                            </div><img src="images/cc/mastercard.png" alt="">
+                        </div>
+                        <div class="cc-card-number">
+                            <h3><span>1457 3254 4788 5687</span></h3>
+                        </div>
+                        <div class="cc-card-details">
+                            <div>
+                                <h5>CARD HOLDER</h5>
+                                <p>Saiful Islam</p>
+                            </div>
+                            <div>
+                                <h5>VALID TILL</h5>
+                                <p>08/22</p>
+                            </div>
+                            <div><img src="images/cc/sim.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Money Withdraw</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-8"><label for="inputState" class="form-label">Amount</label><input
+                                            type="text" class="form-control" placeholder="330.00"></div>
+                                    <div class="col-4 mb-16"><label for="inputState"
+                                            class="form-label">Currency</label><select id="inputState"
+                                            class="form-select">
+                                            <option>USD</option>
+                                            <option>GBP</option>
+                                            <option>EUR</option>
+                                            <option>BDT</option>
+                                        </select></div>
+                                    <div class="col-12 mb-16">
+                                        <div
+                                            class="payment-method form-check d-flex align-items-center my-12 px-12 py-12 border rounded">
+                                            <input class="form-check-input me-10 ms-0" type="radio"
+                                                name="flexRadioDefault" id="1" checked=""><label
+                                                class="form-check-label d-flex justify-content-between align-items-center flex-grow-1"
+                                                for="1">
+                                                <p class="mb-0">Withdraw with Visa</p><img src="images/cc/visa.png"
+                                                    alt="" height="20">
+                                            </label>
+                                        </div>
+                                        <div
+                                            class="payment-method form-check d-flex align-items-center my-12 px-12 py-12 border rounded">
+                                            <input class="form-check-input me-10 ms-0" type="radio"
+                                                name="flexRadioDefault" id="2" checked=""><label
+                                                class="form-check-label d-flex justify-content-between align-items-center flex-grow-1"
+                                                for="2">
+                                                <p class="mb-0">Withdraw with Master Card</p><img
+                                                    src="images/cc/mastercard.png" alt="" height="20">
+                                            </label>
+                                        </div>
+                                        <div
+                                            class="payment-method form-check d-flex align-items-center my-12 px-12 py-12 border rounded">
+                                            <input class="form-check-input me-10 ms-0" type="radio"
+                                                name="flexRadioDefault" id="3" checked=""><label
+                                                class="form-check-label d-flex justify-content-between align-items-center flex-grow-1"
+                                                for="3">
+                                                <p class="mb-0">Withdraw with Paypal</p><img src="images/cc/paypal.png"
+                                                    alt="" height="20">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2"><button class="btn btn-primary" type="button">Make
+                                            Withdraw</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">My Balance</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-24">
+                                <div>
+                                    <p class="mb-0">Available</p>
+                                    <h3>8365.00</h3>
+                                </div>
+                                <div>
+                                    <p class="mb-0">Pending</p>
+                                    <h3>8365.00</h3>
+                                </div>
+                            </div>
+                            <div class="my-chart">
+                                <canvas id="MyBalance"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card transparent">
+                        <div class="card-header">
+                            <h4 class="card-title">Transactions</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="rtable rtable--5cols rtable--collapse">
+                                <div class="rtable-row rtable-row--head bg-transparent">
+                                    <div class="rtable-cell topic-cell column-heading text-dark"><strong>
+                                            Description</strong></div>
+                                    <div class="rtable-cell id-cell column-heading text-dark"><strong> TR ID</strong>
+                                    </div>
+                                    <div class="rtable-cell date-cell column-heading text-dark"><strong> Date</strong>
+                                    </div>
+                                    <div class="rtable-cell amount-cell column-heading text-dark"><strong>
+                                            Amount</strong></div>
+                                    <div class="rtable-cell card-cell column-heading text-dark"><strong> Card</strong>
+                                    </div>
+                                    <div class="rtable-cell status-cell column-heading text-dark"><strong>
+                                            Status</strong></div>
+                                    <div class="rtable-cell receipt-cell column-heading text-dark"><strong>
+                                            Receipt</strong></div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content">
+                                            <h5>Master Card</h5>
+                                            <p>Withdraw to Master Card</p>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell id-cell">
+                                        <div class="rtable-cell--heading">TR ID</div>
+                                        <div class="rtable-cell--content date-content">TQR252CH18</div>
+                                    </div>
+                                    <div class="rtable-cell date-cell">
+                                        <div class="rtable-cell--heading">Date</div>
+                                        <div class="rtable-cell--content date-content">April 23, 2021</div>
+                                    </div>
+                                    <div class="rtable-cell amount-cell">
+                                        <div class="rtable-cell--heading">Amount</div>
+                                        <div class="rtable-cell--content access-link-content">$180</div>
+                                    </div>
+                                    <div class="rtable-cell card-cell">
+                                        <div class="rtable-cell--heading">Card</div>
+                                        <div class="rtable-cell--content replay-link-content">Master Card</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot status-cell">
+                                        <div class="rtable-cell--heading">Status</div>
+                                        <div class="rtable-cell--content purchase-content">Payment Pending</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot receipt-cell">
+                                        <div class="rtable-cell--heading">Receipt</div>
+                                        <div class="rtable-cell--content pdf-content"><a href="#"><i
+                                                    class="ri-file-text-line"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content">
+                                            <h5>Paypal Account</h5>
+                                            <p>Withdraw to Paypal Account</p>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell id-cell">
+                                        <div class="rtable-cell--heading">TR ID</div>
+                                        <div class="rtable-cell--content date-content">TQR252CH19</div>
+                                    </div>
+                                    <div class="rtable-cell date-cell">
+                                        <div class="rtable-cell--heading">Date</div>
+                                        <div class="rtable-cell--content date-content">May 17, 2021</div>
+                                    </div>
+                                    <div class="rtable-cell amount-cell">
+                                        <div class="rtable-cell--heading">Amount</div>
+                                        <div class="rtable-cell--content access-link-content">$210</div>
+                                    </div>
+                                    <div class="rtable-cell card-cell">
+                                        <div class="rtable-cell--heading">Card</div>
+                                        <div class="rtable-cell--content replay-link-content">Paypal Card</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot status-cell">
+                                        <div class="rtable-cell--heading">Status</div>
+                                        <div class="rtable-cell--content purchase-content">Payment Complete</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot receipt-cell">
+                                        <div class="rtable-cell--heading">Receipt</div>
+                                        <div class="rtable-cell--content pdf-content"><a href="#"><i
+                                                    class="ri-file-text-line"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content">
+                                            <h5>Nexus Account</h5>
+                                            <p>Withdraw to Nexus Card</p>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell id-cell">
+                                        <div class="rtable-cell--heading">TR ID</div>
+                                        <div class="rtable-cell--content date-content">TQR252CH20</div>
+                                    </div>
+                                    <div class="rtable-cell date-cell">
+                                        <div class="rtable-cell--heading">Date</div>
+                                        <div class="rtable-cell--content date-content">Dec 25, 2020</div>
+                                    </div>
+                                    <div class="rtable-cell amount-cell">
+                                        <div class="rtable-cell--heading">Amount</div>
+                                        <div class="rtable-cell--content access-link-content">$165</div>
+                                    </div>
+                                    <div class="rtable-cell card-cell">
+                                        <div class="rtable-cell--heading">Card</div>
+                                        <div class="rtable-cell--content replay-link-content">Nexus Card</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot status-cell">
+                                        <div class="rtable-cell--heading">Status</div>
+                                        <div class="rtable-cell--content purchase-content">Payment Complete</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot receipt-cell">
+                                        <div class="rtable-cell--heading">Receipt</div>
+                                        <div class="rtable-cell--content pdf-content"><a href="#"><i
+                                                    class="ri-file-text-line"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content">
+                                            <h5>Teacher's Portal</h5>
+                                            <p>Withdraw to Master Card Received</p>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell id-cell">
+                                        <div class="rtable-cell--heading">TR ID</div>
+                                        <div class="rtable-cell--content date-content">TQR252CH21</div>
+                                    </div>
+                                    <div class="rtable-cell date-cell">
+                                        <div class="rtable-cell--heading">Date</div>
+                                        <div class="rtable-cell--content date-content">Nov 21, 2020</div>
+                                    </div>
+                                    <div class="rtable-cell amount-cell">
+                                        <div class="rtable-cell--heading">Amount</div>
+                                        <div class="rtable-cell--content access-link-content">$220</div>
+                                    </div>
+                                    <div class="rtable-cell card-cell">
+                                        <div class="rtable-cell--heading">Card</div>
+                                        <div class="rtable-cell--content replay-link-content">Edu Account</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot status-cell">
+                                        <div class="rtable-cell--heading">Status</div>
+                                        <div class="rtable-cell--content purchase-content">Payment Pending</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot receipt-cell">
+                                        <div class="rtable-cell--heading">Receipt</div>
+                                        <div class="rtable-cell--content pdf-content"><a href="#"><i
+                                                    class="ri-file-text-line"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content">
+                                            <h5>Vias Card</h5>
+                                            <p>Payment Received</p>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell id-cell">
+                                        <div class="rtable-cell--heading">TR ID</div>
+                                        <div class="rtable-cell--content date-content">TQR252CH22</div>
+                                    </div>
+                                    <div class="rtable-cell date-cell">
+                                        <div class="rtable-cell--heading">Date</div>
+                                        <div class="rtable-cell--content date-content">Oct 19, 2021</div>
+                                    </div>
+                                    <div class="rtable-cell amount-cell">
+                                        <div class="rtable-cell--heading">Amount</div>
+                                        <div class="rtable-cell--content access-link-content">$280</div>
+                                    </div>
+                                    <div class="rtable-cell card-cell">
+                                        <div class="rtable-cell--heading">Card</div>
+                                        <div class="rtable-cell--content replay-link-content">Master Card</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot status-cell">
+                                        <div class="rtable-cell--heading">Status</div>
+                                        <div class="rtable-cell--content purchase-content">Payment Complete</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot receipt-cell">
+                                        <div class="rtable-cell--heading">Receipt</div>
+                                        <div class="rtable-cell--content pdf-content"><a href="#"><i
+                                                    class="ri-file-text-line"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="vendor/chartjs/chartjs.js"></script>
+
+
+
+
+
+
+
+<script src="js/plugins/chartjs-my-balance.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/scripts.js"></script>
+
+
+</body>
+
+
+<!-- Mirrored from edunet-html.vercel.app/withdraw.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 08:44:59 GMT -->
+</html>

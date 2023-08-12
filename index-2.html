@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from edunet-html.vercel.app/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 08:44:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edunet - Personal LMS HTML Dashboard</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard">
+
+<div id="preloader">
+    <i>.</i>
+    <i>.</i>
+    <i>.</i>
+</div>
+
+<div id="main-wrapper">
+
+    <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="brand-logo"><a class="mini-logo" href="index-2.html"><img src="images/logoi.png" alt=""
+                                    width="40"></a></div>
+                        <div class="search">
+                            <form action="#">
+                                <div class="input-group"><input type="text" class="form-control"
+                                        placeholder="Search Here..."><span class="input-group-text px-12"><i
+                                            class="ri-search-line"></i></span></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="dark-light-toggle"><span class="dark"><i class="ri-moon-line"></i></span><span
+                                class="light"><i class="ri-sun-line"></i></span></div>
+                        <div class="nav-item dropdown notification dropdown">
+                            <div data-bs-toggle="dropdown">
+                                <div class="notify-bell icon-menu"><span><i class="ri-notification-2-line"></i></span>
+                                </div>
+                            </div>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu notification-list dropdown-menu dropdown-menu-right">
+                                <div class="lists"><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-success-lighten text-success"><i
+                                                    class="ri-check-line"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Device confirmation completed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-danger-lighten text-danger"><i
+                                                    class="ri-close-line"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">2FA verification failed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Phone verification pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Phone verification pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a href="notification.html">See more<i class="ri-arrow-right-s-line"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="dropdown profile_log dropdown">
+                            <div data-bs-toggle="dropdown">
+                                <div class="user icon-menu active"><span class="thumb"><img src="images/avatar/1.png"
+                                            alt=""></span></div>
+                            </div>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu dropdown-menu dropdown-menu-right">
+                                <div class="user-email">
+                                    <div class="user"><span class="thumb"><img src="images/avatar/1.png" alt=""></span>
+                                        <div>
+                                            <h5>Fiaz Abdullah</h5><span>codeefly@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="profile.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-user-line"></i></span>Profile</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="settings-profile.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-settings-3-line"></i></span>Settings</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="settings-activity.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-time-line"></i></span>Activity</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="lock.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-lock-line"></i></span>Lock</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  text-danger"
+                                    href="signin.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-logout-circle-line"></i></span>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="sidebar">
+    <div class="brand-logo text-center"><a class="mini-logo" href="index-2.html"><img src="images/logoi.png" alt=""
+                width="30"></a></div>
+    <div class="menu">
+        <ul>
+            <li class="undefined"><a href="index-2.html"><span><i class="ri-grid-fill"></i></span><span
+                        class="nav-text">Dashboard</span></a></li>
+            <li class="undefined"><a href="courses.html"><span><i class="ri-stack-fill"></i></span><span
+                        class="nav-text">Courses</span></a></li>
+            <li class="undefined"><a href="wallet.html"><span><i class="ri-wallet-3-fill"></i></span><span
+                        class="nav-text">Wallet</span></a></li>
+            <li class="undefined"><a href="withdraw.html"><span><i class="ri-hand-coin-fill"></i></span><span
+                        class="nav-text">Withdraw</span></a></li>
+            <li class="undefined"><a href="upload.html"><span><i class="ri-upload-cloud-2-fill"></i></span><span
+                        class="nav-text">Upload</span></a></li>
+            <li class="undefined"><a href="leader-board.html"><span><i class="ri-empathize-fill"></i></span><span
+                        class="nav-text">Board</span></a></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="content-body">
+        <div class="container">
+            <div class="page-title">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6">
+                        <div class="page-title-content">
+                            <h3>Dashboard</h3>
+                            <p class="mb-2">Welcome to Edunet Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="breadcrumbs"><a href="#">Home
+                                <!-- -->
+                            </a><span><i class="ri-arrow-right-s-line"></i></span><a href="#">Dashboard</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="color-widget stat-widget p-20 mb-160 mb-30">
+                        <div class="d-flex align-items-center mb-20"><span class="icon"><i
+                                    class="ri-team-line text-primary bg-primary-lighten fs-30 py-12 px-12 rounded me-20"></i></span>
+                            <div>
+                                <p class="mb-0"><strong>Total Students</strong></p>
+                                <h3 class="mb-0">5220</h3>
+                            </div>
+                        </div>
+                        <p class="mb-7"><strong>Free:
+                                <!-- -->4240 students
+                            </strong></p>
+                        <p><strong>Paid:
+                                <!-- -->980 Students
+                            </strong></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width:75%" role="progressbar" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="undefined stat-widget p-20 mb-160 mb-30">
+                        <div class="d-flex align-items-center mb-20"><span class="icon"><i
+                                    class="ri-add-circle-line text-warning bg-warning-lighten fs-30 py-12 px-12 rounded me-20"></i></span>
+                            <div>
+                                <p class="mb-0"><strong>New Students</strong></p>
+                                <h3 class="mb-0">1032</h3>
+                            </div>
+                        </div>
+                        <p class="mb-7"><strong>Free:
+                                <!-- -->909 students
+                            </strong></p>
+                        <p><strong>Paid:
+                                <!-- -->123 students
+                            </strong></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width:80%" role="progressbar" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="undefined stat-widget p-20 mb-160 mb-30">
+                        <div class="d-flex align-items-center mb-20"><span class="icon"><i
+                                    class="ri-stack-line text-danger bg-danger-lighten fs-30 py-12 px-12 rounded me-20"></i></span>
+                            <div>
+                                <p class="mb-0"><strong>Total Courses</strong></p>
+                                <h3 class="mb-0">109</h3>
+                            </div>
+                        </div>
+                        <p class="mb-7"><strong>Free:
+                                <!-- -->83 courses
+                            </strong></p>
+                        <p><strong>Paid:
+                                <!-- -->26 courses
+                            </strong></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width:65%" role="progressbar" aria-valuenow="65"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-7">
+                    <div id="user-activity" class="card" data-aos="fade-up">
+                        <div class="card-header">
+                            <h4 class="card-title">Earning</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="EarningGraph"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Recent Notification
+                                <!-- -->
+                            </h4><a href="notification.html" class="btn btn-primary">View All</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="recent-notification" style="height:275px; position: relative;">
+                                <div class="notification-list pe-10">
+                                    <a href="#">
+                                        <div
+                                            class="d-flex align-items-center justify-content-start  pt-10 pb-10 border-bottom">
+                                            <span class="me-16 icon  bg-danger-lighten text-danger"><i
+                                                    class="ri-close-line"></i></span>
+                                            <div class="flex-grow-1 flex-fill">
+                                                <h6 class="mb-5 fs-14">2FA verification failed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                            <div class="duration">3 min ago</div>
+                                        </div>
+                                    </a><a href="#">
+                                        <div
+                                            class="d-flex align-items-center justify-content-start  pt-10 pb-10 border-bottom">
+                                            <span class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div class="flex-grow-1 flex-fill">
+                                                <h6 class="mb-5 fs-14">Phone verification pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                            <div class="duration">3 min ago</div>
+                                        </div>
+                                    </a><a href="#">
+                                        <div
+                                            class="d-flex align-items-center justify-content-start  pt-10 pb-10 border-bottom">
+                                            <span class="me-16 icon  bg-danger-lighten text-danger"><i
+                                                    class="ri-close-line"></i></span>
+                                            <div class="flex-grow-1 flex-fill">
+                                                <h6 class="mb-5 fs-14">Dadeline over to launch the new course</h6>
+                                                <span class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                            <div class="duration">3 min ago</div>
+                                        </div>
+                                    </a><a href="#">
+                                        <div
+                                            class="d-flex align-items-center justify-content-start  pt-10 pb-10 border-bottom">
+                                            <span class="me-16 icon  bg-success-lighten text-success"><i
+                                                    class="ri-check-line"></i></span>
+                                            <div class="flex-grow-1 flex-fill">
+                                                <h6 class="mb-5 fs-14">Device confirmation completed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                            <div class="duration">3 min ago</div>
+                                        </div>
+                                    </a><a href="#">
+                                        <div
+                                            class="d-flex align-items-center justify-content-start  pt-10 pb-10 border-bottom">
+                                            <span class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div class="flex-grow-1 flex-fill">
+                                                <h6 class="mb-5 fs-14">New user verification is pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                            <div class="duration">3 min ago</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Total Sales</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="TotalSales"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-8 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Student Queries</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="students-queries" style="height:305px; position: relative;">
+                                <div class="scrollbar-container ps">
+                                    <div class="student-query-inner d-flex justify-content-between align-items-start">
+                                        <img class="me-20 rounded-circle" src="images/avatar/7.jpg" alt="">
+                                        <div class="student-query-details flex-basis-50 flex-grow-1 me-20">
+                                            <h6 class="mb-5">Machine Learning Bootcamp</h6>
+                                            <p>By
+                                                <!-- -->Brandon Taylor
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-end mb-3"><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-primary-lighten"
+                                                href="#"><i class="ri-check-line fs-18 text-primary"></i></a><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-danger-lighten"
+                                                href="#"><i class="ri-close-line fs-18 text-danger"></i></a></div>
+                                    </div>
+                                    <div class="student-query-inner d-flex justify-content-between align-items-start">
+                                        <img class="me-20 rounded-circle" src="images/avatar/8.jpg" alt="">
+                                        <div class="student-query-details flex-basis-50 flex-grow-1 me-20">
+                                            <h6 class="mb-5">Python Bootcamp from Zero to Hero</h6>
+                                            <p>By
+                                                <!-- -->Stweart Mark
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-end mb-3"><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-primary-lighten"
+                                                href="#"><i class="ri-check-line fs-18 text-primary"></i></a><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-danger-lighten"
+                                                href="#"><i class="ri-close-line fs-18 text-danger"></i></a></div>
+                                    </div>
+                                    <div class="student-query-inner d-flex justify-content-between align-items-start">
+                                        <img class="me-20 rounded-circle" src="images/avatar/9.jpg" alt="">
+                                        <div class="student-query-details flex-basis-50 flex-grow-1 me-20">
+                                            <h6 class="mb-5">Amazon Web Services Certification</h6>
+                                            <p>By
+                                                <!-- -->Jhon Cane
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-end mb-3"><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-primary-lighten"
+                                                href="#"><i class="ri-check-line fs-18 text-primary"></i></a><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-danger-lighten"
+                                                href="#"><i class="ri-close-line fs-18 text-danger"></i></a></div>
+                                    </div>
+                                    <div class="student-query-inner d-flex justify-content-between align-items-start">
+                                        <img class="me-20 rounded-circle" src="images/avatar/10.jpg" alt="">
+                                        <div class="student-query-details flex-basis-50 flex-grow-1 me-20">
+                                            <h6 class="mb-5">The Web Developer Bootcamp 2021</h6>
+                                            <p>By
+                                                <!-- -->Nicky Bonje
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-end mb-3"><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-primary-lighten"
+                                                href="#"><i class="ri-check-line fs-18 text-primary"></i></a><a
+                                                class="icon mx-16 my-16 py-8 px-8 rounded-circle bg-danger-lighten"
+                                                href="#"><i class="ri-close-line fs-18 text-danger"></i></a></div>
+                                    </div>
+                                    <div class="ps__rail-x" style="left: 0px; top: 0px;">
+                                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                    </div>
+                                    <div class="ps__rail-y" style="top: 0px; left: 0px;">
+                                        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Balance</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="total-balance">
+                                <p>Available Balance</p>
+                                <h2>$221,478</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-12">
+                                    <div class="balance-stats d-flex justify-content-between align-items-center active">
+                                        <div>
+                                            <p>Today's Earn</p>
+                                            <h3>$42,678</h3>
+                                        </div><span><i class="ri-arrow-right-line"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-12">
+                                    <div class="balance-stats d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <p>Under Review</p>
+                                            <h3>$1,798</h3>
+                                        </div><span><i class="ri-arrow-right-line"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-12">
+                                    <div class="balance-stats d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <p>Pending</p>
+                                            <h3>$255.25</h3>
+                                        </div><span><i class="ri-arrow-right-line"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-12">
+                                    <div class="balance-stats d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <p>Withdraw</p>
+                                            <h3>$365,478</h3>
+                                        </div><span><i class="ri-arrow-right-line"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Student Location</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <div id="world-map"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="card transparent">
+                        <div class="card-header">
+                            <h4 class="card-title">Trafic Analytics</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="rtable rtable--5cols rtable--collapse">
+                                <div class="rtable-row rtable-row--head bg-transparent">
+                                    <div class="rtable-cell topic-cell column-heading text-dark"><strong>Name</strong>
+                                    </div>
+                                    <div class="rtable-cell traffic-cell column-heading text-dark">
+                                        <strong>Traffic</strong>
+                                    </div>
+                                    <div class="rtable-cell source-cell column-heading text-dark">
+                                        <strong>Source</strong>
+                                    </div>
+                                    <div class="rtable-cell referrals-cell column-heading text-dark">
+                                        <strong>Referrals</strong>
+                                    </div>
+                                    <div class="rtable-cell trend-cell column-heading text-dark"><strong>Trend</strong>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img " src="images/courses/10.jpg" width="95" alt="">
+                                            <div class="topic-cell-span">
+                                                <h5>Amazon Web Services Certification</h5>
+                                                <p>AWS Certification Course</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell traffic-cell">
+                                        <div class="rtable-cell--heading">Traffic</div>
+                                        <div class="rtable-cell--content date-content">2.56K</div>
+                                    </div>
+                                    <div class="rtable-cell source-cell">
+                                        <div class="rtable-cell--heading">Source</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            facebook</div>
+                                    </div>
+                                    <div class="rtable-cell referrals-cell">
+                                        <div class="rtable-cell--heading">Referrals</div>
+                                        <div class="rtable-cell--content replay-link-content">28.19%</div>
+                                    </div>
+                                    <div class="rtable-cell trend-cell">
+                                        <div class="rtable-cell--heading">Trend</div>
+                                        <div class="rtable-cell--content replay-link-content">
+                                            Chart Trend
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img " src="images/courses/11.jpg" width="95" alt="">
+                                            <div class="topic-cell-span">
+                                                <h5>Python Bootcamp from Zero to Hero</h5>
+                                                <p>Basic Python course</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell traffic-cell">
+                                        <div class="rtable-cell--heading">Traffic</div>
+                                        <div class="rtable-cell--content date-content">1.56K</div>
+                                    </div>
+                                    <div class="rtable-cell source-cell">
+                                        <div class="rtable-cell--heading">Source</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            twitter</div>
+                                    </div>
+                                    <div class="rtable-cell referrals-cell">
+                                        <div class="rtable-cell--heading">Referrals</div>
+                                        <div class="rtable-cell--content replay-link-content">18.91%</div>
+                                    </div>
+                                    <div class="rtable-cell trend-cell">
+                                        <div class="rtable-cell--heading">Trend</div>
+                                        <div class="rtable-cell--content replay-link-content">
+                                            Chart Trend
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img " src="images/courses/12.jpg" width="95" alt="">
+                                            <div class="topic-cell-span">
+                                                <h5>The Web Developer Bootcamp 2021</h5>
+                                                <p>Advanced web developing course</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell traffic-cell">
+                                        <div class="rtable-cell--heading">Traffic</div>
+                                        <div class="rtable-cell--content date-content">2.17K</div>
+                                    </div>
+                                    <div class="rtable-cell source-cell">
+                                        <div class="rtable-cell--heading">Source</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            facebook</div>
+                                    </div>
+                                    <div class="rtable-cell referrals-cell">
+                                        <div class="rtable-cell--heading">Referrals</div>
+                                        <div class="rtable-cell--content replay-link-content">21.63%</div>
+                                    </div>
+                                    <div class="rtable-cell trend-cell">
+                                        <div class="rtable-cell--heading">Trend</div>
+                                        <div class="rtable-cell--content replay-link-content">
+                                            Chart Trend
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img " src="images/courses/13.jpg" width="95" alt="">
+                                            <div class="topic-cell-span">
+                                                <h5>Data Science Exercises Included.</h5>
+                                                <p>Latest technology of data storage</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell traffic-cell">
+                                        <div class="rtable-cell--heading">Traffic</div>
+                                        <div class="rtable-cell--content date-content">0.89K</div>
+                                    </div>
+                                    <div class="rtable-cell source-cell">
+                                        <div class="rtable-cell--heading">Source</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            linkedin</div>
+                                    </div>
+                                    <div class="rtable-cell referrals-cell">
+                                        <div class="rtable-cell--heading">Referrals</div>
+                                        <div class="rtable-cell--content replay-link-content">15.79%</div>
+                                    </div>
+                                    <div class="rtable-cell trend-cell">
+                                        <div class="rtable-cell--heading">Trend</div>
+                                        <div class="rtable-cell--content replay-link-content">
+                                            Chart Trend
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img " src="images/courses/14.jpg" width="95" alt="">
+                                            <div class="topic-cell-span">
+                                                <h5>Machine Learning Bootcamp</h5>
+                                                <p>Deploying course of trend technology</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell traffic-cell">
+                                        <div class="rtable-cell--heading">Traffic</div>
+                                        <div class="rtable-cell--content date-content">3.19K</div>
+                                    </div>
+                                    <div class="rtable-cell source-cell">
+                                        <div class="rtable-cell--heading">Source</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            youtube</div>
+                                    </div>
+                                    <div class="rtable-cell referrals-cell">
+                                        <div class="rtable-cell--heading">Referrals</div>
+                                        <div class="rtable-cell--content replay-link-content">38.79%</div>
+                                    </div>
+                                    <div class="rtable-cell trend-cell">
+                                        <div class="rtable-cell--heading">Trend</div>
+                                        <div class="rtable-cell--content replay-link-content">
+                                            Chart Trend
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="vendor/chartjs/chartjs.js"></script>
+
+
+
+
+<script src="js/plugins/chartjs-bar-init.js"></script>
+
+
+
+
+
+<script src="js/plugins/chartjs-donut.js"></script>
+
+
+
+
+
+
+<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="js/plugins/perfect-scrollbar-init.js"></script>
+
+
+
+
+
+
+<script src="vendor/jqvmap/js/jquery.vmap.min.js"></script>
+<script src="vendor/jqvmap/js/jquery.vmap.world.js"></script>
+<script src="js/plugins/jqvmap-init.js"></script>
+
+
+
+
+
+
+
+<script src="js/scripts.js"></script>
+
+
+</body>
+
+
+<!-- Mirrored from edunet-html.vercel.app/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 08:44:43 GMT -->
+</html>

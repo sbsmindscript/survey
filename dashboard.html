@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="assets/javascripts/angular.min.js"></script>
+    <script src="assets/javascripts/angular-route.js"></script>
+    <script src="assets/javascripts/dirPaginate.js"></script>
+
+    <!-- <script src="js/inspect-element.js"></script>
+    <script src="js/disable-it.js"></script> -->
+
+</head>
+
+<body class="dashboard" ng-app="myApp" ng-controller="myCtrl" data-ng-init="init()">
+
+<div id="preloader">
+    <i>.</i>
+    <i>.</i>
+    <i>.</i>
+</div>
+
+<div id="main-wrapper">
+
+    <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="brand-logo">
+                         <a class="mini-logo" href="dashboard.html">
+                            <img src="images/logoi.png" alt="logo" width="40">
+                        </a>
+                        </div>
+                    </div>
+
+                    <div class="header-right">
+                        <div class="dark-light-toggle">
+                         <span class="dark">
+                            <i class="ri-moon-line"></i></span>
+                            <span class="light">
+                                <i class="ri-sun-line"></i>
+                            </span>
+                        </div>
+                    
+                        <div class="dropdown profile_log dropdown">
+                            <div data-bs-toggle="dropdown">
+                                <div class="user icon-menu active">
+                                    <span class="thumb">
+                                      <img src="images/avatar/1.png"
+                                            alt="logo">
+                                    </span>
+                                  </div>
+                            </div>
+
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu dropdown-menu dropdown-menu-right">
+                                <div class="user-email">
+                                    <div class="user">
+                                        <span class="thumb">
+                                            <img src="images/avatar/1.png" alt="">
+                                        </span>
+                                        <div>
+                                        <h5>{{users}}</h5>
+                                        <span>{{token}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <a class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined" href="profile.html">
+                                
+                                <span class="fs-18 text-primary me-10"><i class="ri-user-line"></i>
+                                </span>Profile</a>
+                                
+                                <a class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined" href="settings-profile.html">
+                                <span class="fs-18 text-primary me-10"><i class="ri-settings-3-line"></i>
+                                </span>Settings</a>
+
+                                <a class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  text-danger" ng-click="logout()"><span class="fs-18 text-primary me-10"><i class="ri-logout-circle-line"></i></span>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SideBar -->
+<div class="sidebar">
+   <div class="brand-logo text-center">
+    <a class="mini-logo" href="dashboard.html">
+      <img src="images/logoi.png" alt="Logo" width="30"></a>
+  </div>
+    
+    <div class="menu">
+        <ul>
+            <li class="undefined">
+             <a href="dashboard.html">
+                <span style="color:orange;font-weight: bold">Dashboard</span>    
+            </a>
+            </li>
+
+            <li class="undefined">
+             <a href="dashboard.html">
+                <span>Residential</span>    
+            </a>
+            </li>
+
+            <li class="undefined">
+             <a href="dashboard.html">
+                <span>Commercial</span>    
+            </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+    <div class="content-body">
+        <div class="container">
+            <div class="page-title">
+                <div class="row align-items-center justify-content-between text-center">
+                    <div class="col-md-6">
+                        <div class="page-title-content">
+                            <h3>Dashboard</h3>
+                            <p class="mb-2">Welcome {{users}}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="color-widget stat-widget p-20 mb-160 mb-30">
+                        <div class="d-flex align-items-center mb-20"><span class="icon">
+                         <i class="ri-team-line text-primary bg-primary-lighten fs-30 py-12 px-12 rounded me-20"></i>
+                        </span>
+                            <div class="text-center">
+                                <p class="mb-0" style="text-align: center;"><strong>Total Survey</strong>
+                                </p>
+                                <h3 class="mb-0">100</h3>
+                            </div>
+                        </div>
+
+                        <p class="mb-7">
+                            <strong>Residential: 50
+                            </strong>
+                        </p>
+                        <p><strong>Commercial: 50
+                            </strong>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width:75%" role="progressbar" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                <div class="color-widget stat-widget p-20 mb-160 mb-30">
+                        <div class="d-flex align-items-center mb-20">
+                            <span class="icon">
+                            <i class="ri-add-circle-line text-warning bg-warning-lighten fs-30 py-12 px-12 rounded me-20"></i>
+                            </span>
+                            <div>
+                                <p class="mb-0">
+                                 <strong>Today Suvery</strong>
+                                </p>
+                                <h3 class="mb-0">10</h3>
+                            </div>
+                        </div>
+                        <p class="mb-7">
+                            <strong>Residentail: 06</strong>
+                        </p>
+                        
+                        <p><strong>Commercial: 04</strong></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width:80%" role="progressbar" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                <div class="color-widget stat-widget p-20 mb-160 mb-30">
+                        <div class="d-flex align-items-center mb-20"><span class="icon">
+                            <i class="ri-stack-line text-danger bg-danger-lighten fs-30 py-12 px-12 rounded me-20"></i>
+                        </span>
+                            <div>
+                                <p class="mb-0"><strong>Current Month Survey</strong></p>
+                                <h3 class="mb-0">90</h3>
+                            </div>
+                        </div>
+                        <p class="mb-7">
+                            <strong>Residential: 50</strong>
+                        </p>
+                        <p><strong>Commercial:40</strong></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width:65%" role="progressbar" aria-valuenow="65"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xxl-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Recent Survey
+                                <!-- -->
+                            </h4><a href="notification.html" class="btn btn-primary">View All</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="recent-notification" style="height:275px; position: relative;">
+                                <div class="notification-list pe-10">
+                                    <a href="#">
+                                        <div class="d-flex align-items-center justify-content-start  pt-10 pb-10 border-bottom">
+                                        <span class="me-16 icon  bg-danger-lighten text-danger"><i class="ri-close-line"></i>
+                                        </span>
+
+                                         <div class="flex-grow-1 flex-fill">
+                                          <h6 class="mb-5 fs-14">Property Survey 1</h6>
+                                           <span class="fs-13 text-muted">020-11-04 -12:00:23
+                                           </span>
+                                            </div>
+                                            
+                                            <div class="duration">3 min ago
+                                            </div>
+                                        </div></a>
+
+                                   
+                                    <a href="#">
+                                        <div class="d-flex align-items-center justify-content-start  pt-10 pb-10 border-bottom">
+                                          <span class="me-16 icon  bg-success-lighten text-success">
+                                            <i class="ri-check-line">
+                                            </i>
+                                           </span>
+                                            <div class="flex-grow-1 flex-fill">
+                                                <h6 class="mb-5 fs-14">Property Survey 2</h6><span class="fs-13 text-muted">020-11-04
+                                                -12:00:23
+                                                </span>
+                                            </div>
+                                            <div class="duration">3 min ago</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="card text-center">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Total Surveys</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="TotalSales"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="col-lg-12" id="map" style="width:500px;height: 400px">
+
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+</body>
+</html>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/chartjs/chartjs.js"></script>
+<script src="js/plugins/chartjs-donut.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDwQ1tapoFaewBdruwYWftYy-LCFF2u8NE&libraries=places"></script>
+
+<script type="text/javascript">
+var app = angular.module('myApp',['angularUtils.directives.dirPagination']);
+app.controller('myCtrl', function($scope,$window,$http) {
+
+
+    $scope.init = function() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            $scope.$evalAsync(function() {
+                $scope.lat = position.coords.latitude;
+                console.log($scope.lat);
+                $scope.lan = position.coords.longitude;
+                console.log($scope.lan);
+            })
+        });
+    }
+}
+
+//19.834625758831116, 75.88080673746703
+
+
+ $scope.users= localStorage.getItem('username');
+
+ $scope.token=localStorage.getItem('email');
+
+console.log($scope.token);
+
+   if($scope.token == null)
+    {
+      
+      $window.location.href='index.html';
+    }
+
+    else{
+
+      // $window.location.href='#!/main';
+    }
+
+
+$scope.logout=function(){
+
+localStorage.removeItem("email");
+
+$window.location.href='index.html';
+
+$window.location.reload();
+
+}
+
+
+
+// close controller//
+    });
+
+</script>
+
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from edunet-html.vercel.app/leader-board.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 08:44:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edunet - Personal LMS HTML Dashboard</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard">
+
+<div id="preloader">
+    <i>.</i>
+    <i>.</i>
+    <i>.</i>
+</div>
+
+<div id="main-wrapper">
+
+    <div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="brand-logo"><a class="mini-logo" href="index-2.html"><img src="images/logoi.png" alt=""
+                                    width="40"></a></div>
+                        <div class="search">
+                            <form action="#">
+                                <div class="input-group"><input type="text" class="form-control"
+                                        placeholder="Search Here..."><span class="input-group-text px-12"><i
+                                            class="ri-search-line"></i></span></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="dark-light-toggle"><span class="dark"><i class="ri-moon-line"></i></span><span
+                                class="light"><i class="ri-sun-line"></i></span></div>
+                        <div class="nav-item dropdown notification dropdown">
+                            <div data-bs-toggle="dropdown">
+                                <div class="notify-bell icon-menu"><span><i class="ri-notification-2-line"></i></span>
+                                </div>
+                            </div>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu notification-list dropdown-menu dropdown-menu-right">
+                                <div class="lists"><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-success-lighten text-success"><i
+                                                    class="ri-check-line"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Device confirmation completed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-danger-lighten text-danger"><i
+                                                    class="ri-close-line"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">2FA verification failed</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Phone verification pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a class="d-block pt-10 pb-10 border-bottom" href="#">
+                                        <div class="d-flex align-items-center"><span
+                                                class="me-16 icon  bg-warning-lighten text-warning"><i
+                                                    class="ri-question-mark"></i></span>
+                                            <div>
+                                                <h6 class="mb-0 fs-14">Phone verification pending</h6><span
+                                                    class="fs-13 text-muted">020-11-04
+                                                    <!-- -->
+                                                    <!-- -->12:00:23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a><a href="notification.html">See more<i class="ri-arrow-right-s-line"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="dropdown profile_log dropdown">
+                            <div data-bs-toggle="dropdown">
+                                <div class="user icon-menu active"><span class="thumb"><img src="images/avatar/1.png"
+                                            alt=""></span></div>
+                            </div>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu dropdown-menu dropdown-menu-right">
+                                <div class="user-email">
+                                    <div class="user"><span class="thumb"><img src="images/avatar/1.png" alt=""></span>
+                                        <div>
+                                            <h5>Fiaz Abdullah</h5><span>codeefly@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="profile.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-user-line"></i></span>Profile</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="settings-profile.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-settings-3-line"></i></span>Settings</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="settings-activity.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-time-line"></i></span>Activity</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  undefined"
+                                    href="lock.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-lock-line"></i></span>Lock</a><a
+                                    class="dropdown-item ps-20 pe-20 pt-10 pb-10 d-flex align-items-center border-top  text-danger"
+                                    href="signin.html"><span class="fs-18 text-primary me-10"><i
+                                            class="ri-logout-circle-line"></i></span>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="sidebar">
+    <div class="brand-logo text-center"><a class="mini-logo" href="index-2.html"><img src="images/logoi.png" alt=""
+                width="30"></a></div>
+    <div class="menu">
+        <ul>
+            <li class="undefined"><a href="index-2.html"><span><i class="ri-grid-fill"></i></span><span
+                        class="nav-text">Dashboard</span></a></li>
+            <li class="undefined"><a href="courses.html"><span><i class="ri-stack-fill"></i></span><span
+                        class="nav-text">Courses</span></a></li>
+            <li class="undefined"><a href="wallet.html"><span><i class="ri-wallet-3-fill"></i></span><span
+                        class="nav-text">Wallet</span></a></li>
+            <li class="undefined"><a href="withdraw.html"><span><i class="ri-hand-coin-fill"></i></span><span
+                        class="nav-text">Withdraw</span></a></li>
+            <li class="undefined"><a href="upload.html"><span><i class="ri-upload-cloud-2-fill"></i></span><span
+                        class="nav-text">Upload</span></a></li>
+            <li class="undefined"><a href="leader-board.html"><span><i class="ri-empathize-fill"></i></span><span
+                        class="nav-text">Board</span></a></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="content-body">
+        <div class="container">
+            <div class="page-title">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6">
+                        <div class="page-title-content">
+                            <h3>Leader Board</h3>
+                            <p class="mb-2">Welcome to Edunet Leader Board page</p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="breadcrumbs"><a href="#">Home </a><span><i
+                                    class="ri-arrow-right-s-line"></i></span><a href="#">Leader Board</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card transparent">
+                        <div class="card-body">
+                            <div class="rtable rtable--5cols rtable--collapse">
+                                <div class="rtable-row rtable-row--head bg-transparent">
+                                    <div class="rtable-cell topic-cell column-heading text-dark"><strong> Course
+                                            Name</strong></div>
+                                    <div class="rtable-cell category-cell column-heading text-dark"><strong>
+                                            Category</strong></div>
+                                    <div class="rtable-cell ranking-cell column-heading text-dark"><strong>
+                                            Ranking</strong></div>
+                                    <div class="rtable-cell impression-cell column-heading text-dark"><strong>
+                                            Impression</strong></div>
+                                    <div class="rtable-cell sales-cell column-heading text-dark"><strong> Sales</strong>
+                                    </div>
+                                    <div class="rtable-cell earning-cell column-heading text-dark"><strong>
+                                            Earning</strong></div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/bootstrap.png" alt=""
+                                                width="50"><span class="topic-cell-span">Bootstrap Camp</span></div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">Growing designing concept</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>3.89
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">1096</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">1685</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$31400</div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/html5.png" alt=""
+                                                width="50"><span class="topic-cell-span">Advanced Course of HTML5</span>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">Real use in real project</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>4.16
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">1156</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">3912</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$1965</div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/jquery.png" alt=""
+                                                width="50"><span class="topic-cell-span">Project Development using
+                                                JQuery</span></div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">Implementation of JQuery</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>4.89
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">12369</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">5733</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$4857</div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/laravel.png" alt=""
+                                                width="50"><span class="topic-cell-span">Basic Learning of
+                                                Laravel</span></div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">Start up with Laravel</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>4.18
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">12369</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">1800</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$35280</div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/vue.png" alt=""
+                                                width="50"><span class="topic-cell-span">Premium program of Vue</span>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">Advanced course</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>4.32
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">12369</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">985</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$35280</div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/sass.png" alt=""
+                                                width="50"><span class="topic-cell-span">Project with SASS</span></div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">sass instead of css</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>4.06
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">12369</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">590</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$35280</div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/bootstrap.png" alt=""
+                                                width="50"><span class="topic-cell-span">Bootstrap Development</span>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">Design</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>4.98
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">12369</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">2133</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$35280</div>
+                                    </div>
+                                </div>
+                                <div class="rtable-row">
+                                    <div class="rtable-cell topic-cell">
+                                        <div class="rtable-cell--content title-content d-flex align-items-center"><img
+                                                class="topic-cell-img" src="images/courses/bootstrap.png" alt=""
+                                                width="50"><span class="topic-cell-span">Bootstrap Development</span>
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell category-cell">
+                                        <div class="rtable-cell--heading">Category</div>
+                                        <div class="rtable-cell--content date-content">Design</div>
+                                    </div>
+                                    <div class="rtable-cell ranking-cell">
+                                        <div class="rtable-cell--heading">Ranking</div>
+                                        <div class="rtable-cell--content access-link-content d-flex align-items-center">
+                                            <span><i class="ri-star-s-line fs-16 me-5 text-warning"></i></span>4.62
+                                        </div>
+                                    </div>
+                                    <div class="rtable-cell impression-cell">
+                                        <div class="rtable-cell--heading">Impression</div>
+                                        <div class="rtable-cell--content replay-link-content">21563</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot sales-cell">
+                                        <div class="rtable-cell--heading">Sales</div>
+                                        <div class="rtable-cell--content earning-content">1642</div>
+                                    </div>
+                                    <div class="rtable-cell rtable-cell--foot earning-cell">
+                                        <div class="rtable-cell--heading">Earning</div>
+                                        <div class="rtable-cell--content earning-content">$35280</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/scripts.js"></script>
+
+
+</body>
+
+
+<!-- Mirrored from edunet-html.vercel.app/leader-board.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 08:44:59 GMT -->
+</html>
